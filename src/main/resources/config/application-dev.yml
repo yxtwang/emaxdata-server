@@ -46,7 +46,7 @@ spring:
             hibernate.cache.region.factory_class: io.github.jhipster.config.jcache.SpringCacheRegionFactory
     cache:
         jcache:
-            config: ehcache.xml
+            config: config/ehcache/ehcache-dev.xml
     mail:
         host: localhost
         port: 25
@@ -70,13 +70,10 @@ server:
 # ===================================================================
 
 jhipster:
-    cache: # Cache configuration
-        ehcache: # Hibernate 2nd level cache
-            max-bytes-local-heap: 16M
     security:
         remember-me:
             # security key (this key should be unique for your application, and kept secret)
-            key: 45dc36c8ad79f231e2baff95564f7877b9b4ecd7
+            key: 15db7b69565c51ffd5ce1c960f1d8c58da4c33c5
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from: emaxdata@localhost
         base-url: http://127.0.0.1:8080

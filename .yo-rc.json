@@ -1,6 +1,6 @@
 {
   "generator-jhipster": {
-    "jhipsterVersion": "4.0.2",
+    "jhipsterVersion": "4.0.3",
     "baseName": "emaxdata",
     "packageName": "com.elinkzine",
     "packageFolder": "com/elinkzine",
@@ -14,12 +14,14 @@
     "prodDatabaseType": "mysql",
     "searchEngine": false,
     "messageBroker": false,
+    "serviceDiscoveryType": false,
     "buildTool": "gradle",
     "enableSocialSignIn": false,
-    "rememberMeKey": "45dc36c8ad79f231e2baff95564f7877b9b4ecd7",
-    "useSass": false,
+    "rememberMeKey": "15db7b69565c51ffd5ce1c960f1d8c58da4c33c5",
+    "useSass": true,
     "clientPackageManager": "yarn",
     "applicationType": "monolith",
+    "clientFramework": "angular2",
     "testFrameworks": [],
     "jhiPrefix": "jhi",
     "enableTranslation": true,
@@ -27,8 +29,6 @@
     "languages": [
       "en",
       "zh-cn"
-    ],
-    "serviceDiscoveryType": false,
-    "clientFramework": "angular2"
+    ]
   }
 }

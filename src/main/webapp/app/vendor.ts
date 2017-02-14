@@ -1,2 +1,2 @@
 /* tslint:disable */
-import '../content/css/vendor.css';
+import '../content/scss/vendor.scss';

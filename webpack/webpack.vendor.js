@@ -28,8 +28,8 @@ module.exports = {
         exprContextCritical: false,
         rules: [
             {
-                test: /(vendor\.css|global\.css)/,
-                loaders: ['style-loader', 'css-loader']
+                test: /(vendor\.scss|global\.scss)/,
+                loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
                 test: /\.(jpe?g|png|gif|svg|woff|woff2|ttf|eot)$/i,
