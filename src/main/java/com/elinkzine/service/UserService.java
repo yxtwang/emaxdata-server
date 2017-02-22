@@ -4,6 +4,7 @@ import com.elinkzine.domain.Authority;
 import com.elinkzine.domain.User;
 import com.elinkzine.repository.AuthorityRepository;
 import com.elinkzine.repository.PersistentTokenRepository;
+import com.elinkzine.config.Constants;
 import com.elinkzine.repository.UserRepository;
 import com.elinkzine.security.AuthoritiesConstants;
 import com.elinkzine.security.SecurityUtils;
@@ -195,7 +196,7 @@ public class UserService {
 
     @Transactional(readOnly = true)    
     public Page<UserDTO> getAllManagedUsers(Pageable pageable) {
-        return userRepository.findAll(pageable).map(UserDTO::new);
+        return userRepository.findAllByLoginNot(pageable, Constants.ANONYMOUS_USER).map(UserDTO::new);
     }
 
     @Transactional(readOnly = true)
