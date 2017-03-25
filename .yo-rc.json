@@ -1,6 +1,6 @@
 {
   "generator-jhipster": {
-    "jhipsterVersion": "4.1.0",
+    "jhipsterVersion": "4.1.1",
     "baseName": "emaxdata",
     "packageName": "com.elinkzine",
     "packageFolder": "com/elinkzine",
